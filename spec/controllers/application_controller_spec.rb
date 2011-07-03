@@ -29,15 +29,15 @@ describe ApplicationController do
       # TEST FAILS :(
     end 
 
-    it "so if you're using Rails defaults, you need to clear the cache" do 
-      # Yeah for a new line of code
-      Rails.cache.clear
-      subject.stub!(:i_can_be_stubbed_to_raise_an_error).and_raise("I'm an error")
-      lambda {
-        subject.i_assign_a_value 
-      }.should raise_error
-      # TEST PASSES :)
-    end 
+#    it "so if you're using Rails defaults, you need to clear the cache" do 
+#      # Yeah for a new line of code
+#      Rails.cache.clear
+#      subject.stub!(:i_can_be_stubbed_to_raise_an_error).and_raise("I'm an error")
+#      lambda {
+#        subject.i_assign_a_value 
+#      }.should raise_error
+#      # TEST PASSES :)
+#    end 
 
   end 
 end 
