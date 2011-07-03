@@ -16,10 +16,10 @@ describe ApplicationController do
   end 
 
   describe "beware of Rails Cache" do 
-    it "can be fine with a happy case" do 
-      subject.i_assign_a_value 
-      assigns(:my_value).should eq(5)
-    end 
+#    it "can be fine with a happy case" do 
+#      subject.i_assign_a_value 
+#      assigns(:my_value).should eq(5)
+#    end 
 
     it "can cause problems when testing error cases" do 
       subject.stub!(:i_can_be_stubbed_to_raise_an_error).and_raise("I'm an error")
